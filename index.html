@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrim Checklist</title>
+
+    <script src="bootsrap_script.js"></script>
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- script e css -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#bar"><img src="img/quest-marker.png" alt="" width="40px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Base game
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#main-quest">Main Quest</a></li>
+                      <li><a class="dropdown-item" href="#college">College of Winterhold</a></li>
+                      <li><a class="dropdown-item" href="#dark">Dark Brotherhood</a></li>
+                      <li><a class="dropdown-item" href="#companions">The Companions</a></li>
+                      <li><a class="dropdown-item" href="#thieves">Thieves Guild</a></li>
+                      <li><a class="dropdown-item" href="#daedra">Daedric Quests</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#imperial">Imperial Legion</a></li>
+                      <li><a class="dropdown-item" href="#stormcloaks">Stormcloaks</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dawnguard
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#main-dawn">Main Quest</a></li>
+                      <li><a class="dropdown-item" href="#dawn">Dawnguard</a></li>
+                      <li><a class="dropdown-item" href="#volk">Clan Volkihar</a></li>
+                      <li><a class="dropdown-item" href="#side-dawn">Side Quests</a></li>
+                      <li><a class="dropdown-item" href="#misc-dawn">Misc</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dragonborn
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#main-dragon">Main Quest</a></li>
+                        <li><a class="dropdown-item" href="#raven">Raven Rock</a></li>
+                        <li><a class="dropdown-item" href="#skaal">Skaal Village</a></li>
+                        <li><a class="dropdown-item" href="#tel">Tel Mithryn</a></li>
+                        <li><a class="dropdown-item" href="#mead">Thirsk Mead Hall</a></li>
+                        <li><a class="dropdown-item" href="#other">Other quests</a></li>
+                      </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search quest" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="progress-container " id="bar">
+        <p>Progress</p>
+
+        <div class="progress col-lg-6 col-sm-9" role="progressbar" aria-label="Example with label" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width: 25%">25%</div>
+        </div>  
+    </div>
+
+    <div class="quests">
+        <div id="main-quest">
+            <div class="titulo">
+                <img src="img/main-left.png" alt="">
+                <h1>Main Quest</h1>
+                <img src="img/main-right.png" alt="">
+            </div>
+
+            <h2> Act I </h2>
+            
+            <label><input type="checkbox" class="quest"> Unbound
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Before the Storm
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Bleak Falls Barrow
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Dragon Rising
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Way of the Voice
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Horn of Jurgen Windcaller
+            </label><br>
+
+            <h2> Act II </h2>
+
+            <label><input type="checkbox" class="quest"> A Blade in the Dark
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Diplomatic Immunity
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> A Cornered Rat
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Alduin's Wall
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Throat of the World
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Elder Knowledge
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Alduin's Bane
+            </label><br>
+
+            <h2> Act III </h2>
+
+            <label><input type="checkbox" class="quest"> The Fallen
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Season Unending
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Paarthurnax
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The World-Eater's Eyrie
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Sovngarde
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Dragonslayer
+            </label><br>
+        </div>
+
+        <div id="college">
+            <h1>College of Winterhold</h1>
+            <h2>Main questline</h2>
+
+            <label><input type="checkbox" class="quest"> Visit the College of WInterhold
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> First Lessons
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Under Saarthal
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Hitting the Books
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Good Intentions
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Revealing the Unseen
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Containment
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Staff of Magnus
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Eye of Magnus
+            </label><br>
+
+            <!-- ----------- -->
+
+            <h2>Side quests</h2>
+            <label><input type="checkbox" class="quest"> Arniel's Endeavor
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Brelyna's Practice
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> J'zargo's Experiment
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Onmund's Request
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Out of Balance
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Rejoining the College
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Tolfdir the Absent-Minded
+            </label><br>
+
+            <!-- ---------- -->
+
+            <h2>Radiant quests</h2>        
+
+            <label><input type="checkbox" class="quest"> Enchanting Pick-Up
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Restocking Soul Gems
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Aftershock
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Fetch me that Book!
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Shalidor's Insights
+            </label><br>
+
+            <!-- -------------- -->
+
+            <h2>Master Mage Skills</h2>
+
+            <label><input type="checkbox" class="quest"> Alteration Ritual Spell
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Conjuration Ritual Spell
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Destruction Ritual Spell
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Illusion Ritual Spell
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Resotration Ritual Spell
+            </label><br>
+        </div>
+
+        <div id="dark">
+            <h1>Dark Brotherhood</h1>
+            <h2>Main questline</h2>
+
+            <label><input type="checkbox" class="quest"> Delayed Burial
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Innocence Lost
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> With Friends Like These...
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Sanctuary
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Mourning Never Comes
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Whispers in the Dark
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Silence Has Been Broken
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Bound Until Death
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Breaching Security
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Cure for Madness
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Recipe for Disaster
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> To Kill an Empire
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Death Incarnate
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Hail Sithis!
+            </label><br>
+
+            <!-- --------- -->
+             <h2> Contracts </h2>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Beitild
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Narfi
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Ennodius Papius
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Lurbuk
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Hern
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Deekus
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Ma'randru-jo
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Anoriath
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Agnis
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Maluril
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Helvard
+             </label><br><hr>
+
+             <label><input type="checkbox" class="quest"> Contract: Kill Safia
+             </label><br>
+
+             <!-- ----------- -->
+            <h2>Side quests</h2>
+
+            <label><input type="checkbox" class="quest"> Locate the Assassin of Old
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Honor Thy Family
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Dark Brotherhood Forever
+            </label><br>
+
+            <!-- ----------- -->
+            <h2>Other quests</h2>
+
+            <label><input type="checkbox" class="quest"> Destroy the Dark Brotherhood!
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Where You Hang Your Enemy's Head
+            </label><br>           
+
+
+        </div>
+
+        <div id="companions">
+            <h1>The Companions</h1>
+            <h2>Main questline</h2>
+
+            <label><input type="checkbox" class="quest"> Take Up Arms
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Proving Honor
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Silver Hand
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Blood's Honor
+            </label><br><hr>
+            
+            <label><input type="checkbox" class="quest"> Purity of Revenge
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Glory of the Dead
+            </label><br>
+
+            <!-- ----------- -->
+            <h2>Side quests</h2>
+
+            <label><input type="checkbox" class="quest"> Stealing Plans
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Striking the Heart
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Retrieval
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Totems of Hircine
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Purity
+            </label><br>
+
+            <!-- ------- -->
+            <h2>Radiant quests</h2>
+
+            <label><input type="checkbox" class="quest"> Animal Extermination
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Hired Muscle
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Trouble in Skyrim
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Family Heirloom
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Escaped Criminal
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Rescue Mission
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Dragon Seekers
+            </label><br>
+
+        </div>
+
+        <div id="thieves">
+            <h1>Thieves Guild</h1>
+            <h2>Main questline</h2>
+
+            <label><input type="checkbox" class="quest"> A Chance Arrangement
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Taking Care of Business
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Loud and Clear
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Dampened Spirits
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Scoundrel's Folly
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Speaking With Silence
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Hard Answers
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Pursuit
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Trinity Restored
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Blindsighted
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Darkness Returns
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Under New Management
+            </label><br>
+
+            <!-- ---------- -->
+
+            <h2>Side quests</h2>
+
+            <label><input type="checkbox" class="quest"> Imitation Amnesty
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Summerset Shadows
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Silver Lining
+            </label><br><hr>
+            
+            <label><input type="checkbox" class="quest"> The Dainty Sload
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> No Stone Unturned
+            </label><br>
+
+            <!-- ---------- -->
+
+            <h2>Radiant quests</h2>
+
+            <label><input type="checkbox" class="quest"> The Bedlam Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Fishing Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Numbers Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Burglary Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Heist Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Shill Job
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Sweep Job
+            </label><br>
+
+        </div>
+
+        <div>
+            <h1 style="margin-bottom: 0px;">Civil War</h1><hr>
+
+            <div id="imperial">
+                <h1>Imperial Legion</h1>
+
+                <label><input type="checkbox" class="quest"> Joining the Legion
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Jagged Crown
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Message to Whiterun
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Battle for Whiterun
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Reunification of Skyrim
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> ​A False Front
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Dunstad
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Compelling Tribute
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Greenwall
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Sungard
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Rescue from Fort Kastav
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Neugrad
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Amol
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Battle for Windhelm
+                </label><br>
+
+            </div>
+
+            <div id="stormcloaks">
+                <h1>Stormcloaks</h1>
+
+                <label><input type="checkbox" class="quest"> Joining the Stormcloaks
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Jagged Crown
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Message to Whiterun
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Battle for Whiterun
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Liberation of Skyrim
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Rescue from Fort Neugrad
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Compelling Tribute
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Sungard
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Greenwall
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> A False Front
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Snowhawk
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> The Battle for Fort Hraggstad
+                </label><br><hr>
+
+                <label><input type="checkbox" class="quest"> Battle for Solitude
+                </label><br>
+
+            </div>
+        </div>
+
+        <div id="daedra">
+            <h1>Daedric Quests</h1>
+
+            <label><input type="checkbox" class="quest"> The Black Star
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Boethiah's Calling
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> A Daedra's Best Friend
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Discerning the Transmundane
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Ill Met By Moonlight
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Cursed Tribe
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Pieces of the Past
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Whispering Door
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Break of Dawn
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The House of Horrors
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Taste of Death
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Only Cure
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> A Night to Remember
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> The Mind of Madness
+            </label><br><hr>
+
+            <label><input type="checkbox" class="quest"> Waking Nightmare
+            </label><br>
+
+        </div>
+
+        <div>
+            <h1 style="margin-bottom: 0px;">Dawnguard</h1><hr>
+                       
+            <div id="main-dawn">
+                <h1>Main Quest</h1>
+            </div>
+
+            <div id="dawn">
+            </div>
+
+            <div id="volk">
+            </div>
+
+            <div id="side-dawn">
+            </div>
+
+            <div id="misc-dawn">
+            </div>                     
+        </div>
+
+        <div>
+            <h1 style="margin-bottom: 0px;">Dragonborn</h1><hr>
+            
+            <div id="main-dragon">
+                <h1>Main Quest</h1>
+            </div>
+
+            <div id="raven">
+            </div>
+
+            <div id="skaal">
+            </div>
+
+            <div id="tel">
+            </div>
+
+            <div id="mead">
+            </div>
+
+            <div id="other">
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
+
+<script src="script.js"></script>
+
+

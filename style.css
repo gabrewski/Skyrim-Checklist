@@ -1,0 +1,71 @@
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(43, 43, 43);
+}
+
+nav img{
+    margin-left: 25px;
+}
+
+
+.progress-container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 200px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+}
+
+.progress{
+    height: 40px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.progress-bar{
+    background-color: rgb(0, 0, 0);
+}
+
+.quests{
+    width: 75%;
+    margin: auto;
+}
+
+.quests h1{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.quests h2{
+    margin-bottom: 25px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.quests div{
+    margin-bottom: 100px;
+}
+
+.quests .titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.quests .titulo img{
+    height: 60px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
