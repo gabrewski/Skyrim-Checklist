@@ -30,3 +30,19 @@ window.addEventListener('load', () => {
     progressContainer.setAttribute('aria-valuenow', Math.round(savedProgress));
   }
 });
+
+// -------------------------------------------
+
+// Seleciona todos os checkboxes com a classe 'quest'
+const checkboxes = document.querySelectorAll('.quest');
+
+// Adiciona um evento para cada checkbox
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            this.parentElement.classList.add('checked');
+        } else {
+            this.parentElement.classList.remove('checked');
+        }
+    });
+});
