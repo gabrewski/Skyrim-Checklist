@@ -1,12 +1,39 @@
 body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: white;
-    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
+    background-color: #2B3035;
 }
 
 nav img{
     margin-left: 25px;
+}
+
+nav .nav-item a{
+    transition: 600ms ease-out 100ms;
+}
+
+nav .nav-item a:hover{
+    text-decoration: underline;
+    color: #46c2a3;;   
+}
+
+nav .d-flex button{
+    background-color: #1d2024;
+    border: none;
+    border-radius: 5px;
+    transition: 600ms ease-out 100ms;
+    color: rgb(255, 255, 255);
+}
+
+nav .d-flex button:hover{
+    background-color: #56c2a7;;
+    color: white;
+}
+
+nav .d-flex input{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
@@ -47,19 +74,24 @@ nav img{
     border-radius: 50px;
     margin: auto;
     margin-bottom: 200px;
-    background-color: rgb(73, 73, 73);
+    background-color: #364e48;;
+    box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px;  
     
 }
 
 .progress-bar{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 181, 22);
-    font-weight: 700;   
+    background-color: #3ba78c;
+    color: #000000;
+    font-weight: 700; 
+    
 }
 
 .quests{
-    width: 75%;
+    
     margin: auto;
+    border: solid 1px rgb(73, 73, 73);
+    border-radius: 20px;
+    padding: 50px;
 }
 .quests .icons img{
     display: flex;
@@ -77,6 +109,9 @@ nav img{
     font-weight: 900;
     display: flex;
     justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px #2b6456; 
+    
     
 }
 
@@ -85,6 +120,7 @@ nav img{
     margin-top: 40px;
     font-size: 25px;
     font-weight: 700;
+    color: #56c2a7;
 }
 
 .quests div{

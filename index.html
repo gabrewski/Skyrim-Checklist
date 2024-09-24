@@ -24,7 +24,7 @@
 </head>
 <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#bar"><img src="img/quest-marker.png" alt="" width="40px"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -122,13 +122,13 @@
                 <form class="d-flex" role="search" onsubmit="return false;">
                   <input id="search-input" class="form-control me-2" type="search" placeholder="Search quest" aria-label="Search">
                   <button class="btn btn-outline-success" type="button" onclick="searchQuests()">Search</button>
-                </form>
+                </form>                
               </div>
             </div>
         </nav>
     </header>
 
-    <div class="progress-container " id="bar">
+    <div class="progress-container" id="bar">
       <div class="titulo">
         <!-- <img src="img/main-left.png" alt=""> -->
           <p>Progress</p>
@@ -140,7 +140,8 @@
         </div>  
     </div>
 
-    <div class="quests">
+    <div class="container">
+      <div class="quests col-md-12 col-sm-12 col-lg-9">
         <div id="main-quest">
             <h1>Main Quest</h1>
 
@@ -1920,7 +1921,9 @@
             </label><br>
           </div>
         </div>
+      </div>
     </div>
+    
     
 </body>
 </html>
