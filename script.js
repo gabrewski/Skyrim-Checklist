@@ -18,6 +18,13 @@ function restoreQuestState() {
     const questState = JSON.parse(savedState);
     quests.forEach((quest, index) => {
       quest.checked = questState[index];  // Restaura o estado de cada checkbox
+
+      // Verifica se o checkbox está marcado e aplica a classe 'checked' ao elemento pai
+      if (quest.checked) {
+        quest.parentElement.classList.add('checked');
+      } else {
+        quest.parentElement.classList.remove('checked');
+      }
     });
   }
 }
@@ -39,30 +46,21 @@ function updateProgress() {
   localStorage.setItem('questsProgress', percentComplete);
 }
 
-// Evento de mudança em cada checkbox
+// Evento de mudança em cada checkbox para alterar a cor do texto e atualizar o progresso
 quests.forEach(quest => {
-  quest.addEventListener('change', updateProgress);
+  quest.addEventListener('change', function() {
+    if (this.checked) {
+      this.parentElement.classList.add('checked');
+    } else {
+      this.parentElement.classList.remove('checked');
+    }
+    updateProgress();
+  });
 });
 
 // Restaurar o progresso e o estado das quests ao carregar a página
 window.addEventListener('load', () => {
-  restoreQuestState();  // Restaura o estado dos checkboxes
+  restoreQuestState();  // Restaura o estado dos checkboxes e a cor do texto
   updateProgress();  // Atualiza a barra de progresso com base no estado restaurado
 });
 
-
-// -------------------------------------------
-
-// Seleciona todos os checkboxes com a classe 'quest'
-const checkboxes = document.querySelectorAll('.quest');
-
-// Adiciona um evento para cada checkbox
-checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        if (this.checked) {
-            this.parentElement.classList.add('checked');
-        } else {
-            this.parentElement.classList.remove('checked');
-        }
-    });
-});
