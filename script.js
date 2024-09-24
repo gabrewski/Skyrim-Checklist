@@ -2,10 +2,27 @@ const quests = document.querySelectorAll('.quest');
 const progressBar = document.querySelector('.progress-bar');
 const progressContainer = document.querySelector('.progress');
 
-quests.forEach(quest => {
-  quest.addEventListener('change', updateProgress);
-});
+// Função para salvar o estado das quests no localStorage
+function saveQuestState() {
+  const questState = [];
+  quests.forEach((quest, index) => {
+    questState.push(quest.checked);  // Salva true ou false dependendo se o checkbox está marcado
+  });
+  localStorage.setItem('questsState', JSON.stringify(questState));
+}
 
+// Função para restaurar o estado das quests do localStorage
+function restoreQuestState() {
+  const savedState = localStorage.getItem('questsState');
+  if (savedState) {
+    const questState = JSON.parse(savedState);
+    quests.forEach((quest, index) => {
+      quest.checked = questState[index];  // Restaura o estado de cada checkbox
+    });
+  }
+}
+
+// Função para atualizar o progresso
 function updateProgress() {
   const total = quests.length;
   const completed = document.querySelectorAll('.quest:checked').length;
@@ -17,19 +34,22 @@ function updateProgress() {
   // Atualizar os atributos de acessibilidade
   progressContainer.setAttribute('aria-valuenow', Math.round(percentComplete));
 
-  // Opcional: Salvar o progresso no localStorage
+  // Salvar o estado das quests e o progresso no localStorage
+  saveQuestState();
   localStorage.setItem('questsProgress', percentComplete);
 }
 
-// Recuperar o progresso salvo ao carregar a página
-window.addEventListener('load', () => {
-  const savedProgress = localStorage.getItem('questsProgress');
-  if (savedProgress) {
-    progressBar.style.width = `${savedProgress}%`;
-    progressBar.textContent = `${Math.round(savedProgress)}%`;
-    progressContainer.setAttribute('aria-valuenow', Math.round(savedProgress));
-  }
+// Evento de mudança em cada checkbox
+quests.forEach(quest => {
+  quest.addEventListener('change', updateProgress);
 });
+
+// Restaurar o progresso e o estado das quests ao carregar a página
+window.addEventListener('load', () => {
+  restoreQuestState();  // Restaura o estado dos checkboxes
+  updateProgress();  // Atualiza a barra de progresso com base no estado restaurado
+});
+
 
 // -------------------------------------------
 
