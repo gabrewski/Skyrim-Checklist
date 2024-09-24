@@ -120,3 +120,25 @@ label.checked {
     opacity: 0.5;
     color: gray;
 }
+
+footer{
+    padding-top: 30px;
+    height: 170px;
+    background-color: #23272A;
+}
+
+footer a{
+    color: #b43434;
+}
+
+hr{
+    border: solid 1px #b43434;
+}
+
+footer p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
