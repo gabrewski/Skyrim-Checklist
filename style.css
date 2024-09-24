@@ -15,7 +15,7 @@ nav .nav-item a{
 
 nav .nav-item a:hover{
     text-decoration: underline;
-    color: #46c2a3;;   
+    color: #e02d2d;  
 }
 
 nav .d-flex button{
@@ -27,7 +27,7 @@ nav .d-flex button{
 }
 
 nav .d-flex button:hover{
-    background-color: #56c2a7;;
+    background-color: #962020;
     color: white;
 }
 
@@ -56,31 +56,18 @@ nav .d-flex input{
     font-weight: 700;
 }
 
-/* .progress-container .titulo{
-    display: flex;
-    justify-content: center;
-}
-
-.progress-container .titulo img{
-    height: 60px;
-    object-fit: cover;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 10px;
-} */
-
 .progress{
     height: 40px;
     border-radius: 50px;
     margin: auto;
     margin-bottom: 200px;
-    background-color: #364e48;;
+    background-color: #4e3636;
     box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px;  
     
 }
 
 .progress-bar{
-    background-color: #3ba78c;
+    background-color: #b43434;
     color: #000000;
     font-weight: 700; 
     
@@ -111,7 +98,7 @@ nav .d-flex input{
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px #2b6456; 
+    text-shadow: 3px 3px #772121;
     
     
 }
@@ -121,7 +108,7 @@ nav .d-flex input{
     margin-top: 40px;
     font-size: 25px;
     font-weight: 700;
-    color: #56c2a7;
+    color: #e02d2d;
 }
 
 .quests div{
