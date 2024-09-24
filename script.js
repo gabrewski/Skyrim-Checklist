@@ -5,7 +5,7 @@ const progressContainer = document.querySelector('.progress');
 // Função para salvar o estado das quests no localStorage
 function saveQuestState() {
   const questState = [];
-  quests.forEach((quest, index) => {
+  quests.forEach((quest) => {
     questState.push(quest.checked);  // Salva true ou false dependendo se o checkbox está marcado
   });
   localStorage.setItem('questsState', JSON.stringify(questState));
@@ -19,7 +19,7 @@ function restoreQuestState() {
     quests.forEach((quest, index) => {
       quest.checked = questState[index];  // Restaura o estado de cada checkbox
 
-      // Verifica se o checkbox está marcado e aplica a classe 'checked' ao elemento pai
+      // Verifica se o checkbox está marcado e aplica ou remove a classe 'checked'
       if (quest.checked) {
         quest.parentElement.classList.add('checked');
       } else {
@@ -29,7 +29,7 @@ function restoreQuestState() {
   }
 }
 
-// Função para atualizar o progresso
+// Função para atualizar o progresso e a cor do texto
 function updateProgress() {
   const total = quests.length;
   const completed = document.querySelectorAll('.quest:checked').length;
