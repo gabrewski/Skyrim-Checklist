@@ -34,6 +34,7 @@ nav .d-flex button:hover{
 nav .d-flex input{
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #962020a9;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
