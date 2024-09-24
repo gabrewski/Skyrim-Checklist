@@ -2,7 +2,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: rgb(255, 255, 255);
-    background-color: #2B3035;
+    background-color: #2B3035;     
 }
 
 nav img{
@@ -86,19 +86,20 @@ nav .d-flex input{
     
 }
 
-.quests{
-    
+.quests{   
     margin: auto;
-    border: solid 1px rgb(73, 73, 73);
+    border: solid 1px rgba(255, 255, 255, 0);
     border-radius: 20px;
     padding: 50px;
+    background-color: #2B3035;
+    box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px; 
 }
+
 .quests .icons img{
     display: flex;
     margin: auto;
     margin-top: 0;
     width: 150px;
-    
  }
 
 
