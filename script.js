@@ -64,3 +64,23 @@ window.addEventListener('load', () => {
   updateProgress();  // Atualiza a barra de progresso com base no estado restaurado
 });
 
+
+// pesquisar
+
+function searchQuests() {
+  // Pegue o valor digitado no campo de busca
+  const searchQuery = document.getElementById('search-input').value.toLowerCase();
+
+  // Pegue todos os itens da lista de quests
+  const quests = document.querySelectorAll('#quest-list li');
+
+  // Filtre os itens que não correspondem à pesquisa e os esconda
+  quests.forEach(quest => {
+    const questText = quest.textContent.toLowerCase();
+    if (questText.includes(searchQuery)) {
+      quest.style.display = '';
+    } else {
+      quest.style.display = 'none';
+    }
+  });
+}
