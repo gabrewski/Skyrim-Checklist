@@ -1,7 +1,7 @@
 {
     "name": "Skyrim Quest Checklist",
     "short_name": "Skyrim Quests",
-    "start_url": "index.html",
+    "start_url": "skyrim-checklist/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
