@@ -63,15 +63,14 @@ nav .d-flex input{
     margin: auto;
     margin-bottom: 200px;
     background-color: #4e3636;
-    box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px;  
-    
+    box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px;    
+
 }
 
 .progress-bar{
     background-color: #b43434;
     color: #000000;
-    font-weight: 700; 
-    
+    font-weight: 700;   
 }
 
 .quests{   
