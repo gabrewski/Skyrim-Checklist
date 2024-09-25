@@ -48,12 +48,10 @@ nav .d-flex input{
 }
 
 .progress-container p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+    text-align: center;
+    font-size: 35px;
     margin-top: 200px;
-    font-family: "Cinzel Decorative", serif;
+    font-family: "IM Fell English SC", serif;
     font-weight: 700;
 }
 
@@ -61,8 +59,8 @@ nav .d-flex input{
     height: 40px;
     border-radius: 50px;
     margin: auto;
-    margin-bottom: 200px;
-    background-color: #4e3636;
+    margin-bottom: 150px;
+    background-color: #4e3636ce;
     box-shadow: rgba(14, 14, 14, 0.267) 0px 1px 50px 0px;    
 
 }
@@ -93,14 +91,12 @@ nav .d-flex input{
 .quests h1{
     margin-top: 20px;
     margin-bottom: 50px;
-    font-family: "Cinzel Decorative", serif;
+    font-family: "IM Fell English SC", serif;
+    font-size: 45px;
     font-weight: 900;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px #772121;
-    
-    
+    text-shadow: 3px 3px #772121;      
 }
 
 .quests h2{
@@ -114,6 +110,11 @@ nav .d-flex input{
 .quests div{
     margin-bottom: 100px;
 }
+
+.quests input[type="checkbox"] {
+    accent-color: #e02d2d;
+}
+  
 
 label.checked {
     text-decoration: line-through;
